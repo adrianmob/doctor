@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', cursive;
+    background-color: #d4d3d3;
+}
+
+input {
+    font-family: 'Montserrat Alternates', cursive;
+}
+
+div.contenedor {
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 25px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+nav a.brand-logo {
+    color: black;
+}
+
+
+/* Colores de los formularios*/
+
+.input-field label {
+    color: rgb(0, 0, 0);
+}
+
+div #enviarRec {
+    margin-top: 50px;
+}
+
+#enviar {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    background-color: #549c92;
+    font-size: 17px;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+i.eliminar {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: #f54336;
+}
+
+h3.tituloMed {
+    margin-left: 15px;
+}
+
+hr {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffe8+0,d6dbbf+100;Wax+3D+%231 */
+    background: #feffe8;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #feffe8 0%, #d6dbbf 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #feffe8 0%, #d6dbbf 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #feffe8 0%, #d6dbbf 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#d6dbbf', GradientType=1);
+    /* IE6-9 */
+    height: 5px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+div.medEst {
+    margin-top: 15px;
+}
+
+div.medEst div.input-field input {
+    width: 90%;
+}
+
+div.contenedor {
+    margin-bottom: 25px;
+}
+
+#docPdf {
+    height: 0;
+}
+
+@media screen and (max-width: 800px) {
+    div.contenedor {
+        margin: 0 50px 25px 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-wrapper a {
+        font-size: 2rem;
+        display: inline-block;
+        width: 100%;
+    }
+    div.contenedor {
+        margin: 0 10px 0 10px;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    #enviar {
+        font-size: 11px;
+        display: inline-block;
+        width: 100%;
+    }
+}

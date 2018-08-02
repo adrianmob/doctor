@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- mis estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- iconos de google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Fuentes de google-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat Alternates" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Receta Medica</a>
+
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <h3>Datos del paciente</h3>
+        <form id="formPac">
+            <div class="input-field col">
+                <input id="pac" type="text" class="validate" data-tra="1">
+                <label for="pac">Nombre del Paciente</label>
+            </div>
+            <div class="input-field col">
+                <input id="edad" type="number" class="validate">
+                <label for="edad">Edad</label>
+            </div>
+            <div class="input-field col">
+                <input id="peso" type="number" class="validate">
+                <label for="peso">Peso</label>
+            </div>
+            <div class="input-field col">
+                <input id="talla" type="number" class="validate">
+                <label for="talla">Talla</label>
+            </div>
+            <div class="input-field col">
+                <input id="temp" type="number" class="validate" />
+                <label for="temp">Temperatura</label>
+            </div>
+
+        </form>
+
+
+        <div id="Medicamentos">
+
+            <h3>Medicamentos</h3>
+
+            <div class="input-field col">
+                <input id="med" type="text" class="validate med">
+                <label for="med">Nombre del Medicamento</label>
+            </div>
+            <div class="input-field col">
+                <input id="dos" type="text" class="validate dos">
+                <label for="dos">Dosis del medicamento</label>
+            </div>
+            <div class="input-field col">
+                <input id="fre" type="text" class="validate fre" data-med="fre">
+                <label for="fre">Frecuencia del medicamento</label>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div id="enviarRec">
+            <a class="waves-effect waves-light btn-large" id="enviar">Imprimir</a>
+        </div>
+
+
+    </div>
+
+    <div class="documento">
+        <embed id="docPdf" src="" type="application/pdf">
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="botonAddMed">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+
+
+</body>
+<script src="js/lib/jquery-3.3.1.min.js"></script>
+<script src="js/jspdf.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/agreMedi.js"></script>
+<script>
+</script>
+
+</html>
