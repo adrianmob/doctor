@@ -16,25 +16,25 @@ function agregarTexto(data, imprimir) {
 
     doc.setFontSize(13);
     /* Nombre */
-    doc.text(25, 36, data.nombre);
+    doc.text(25, 37, data.nombre);
     /* fecha */
-    doc.text(164, 36, fechaact);
+    doc.text(164, 37, fechaact);
     /* edad */
-    doc.text(95, 47, data.edad);
+    doc.text(95, 46, data.edad);
     /* peso */
-    doc.text(127, 47, data.peso);
+    doc.text(127, 46, data.peso);
     /* tall */
-    doc.text(162, 47, data.talla);
+    doc.text(162, 46, data.talla);
     /* temperatura */
-    doc.text(198, 47, data.temp);
+    doc.text(198, 46, data.temp);
 
-    doc.setFontSize(11);
+    doc.setFontSize(12);
 
     var linea = 58;
 
     for (var i = 0; i < data.medicamento.length; i++) {
 
-        doc.text(23, linea, data.medicamento[i]);
+        doc.text(15, linea, data.medicamento[i]);
 
         linea += 7;
     }
