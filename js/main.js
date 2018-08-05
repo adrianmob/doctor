@@ -16,21 +16,21 @@ function agregarTexto(data, imprimir) {
 
     doc.setFontSize(13);
     /* Nombre */
-    doc.text(25, 39, data.nombre);
+    doc.text(25, 34, data.nombre);
     /* fecha */
-    doc.text(164, 39, fechaact);
+    doc.text(164, 34, fechaact);
     /* edad */
-    doc.text(95, 50, data.edad);
+    doc.text(95, 45, data.edad);
     /* peso */
-    doc.text(127, 50, data.peso);
+    doc.text(127, 45, data.peso);
     /* tall */
-    doc.text(162, 50, data.talla);
+    doc.text(162, 45, data.talla);
     /* temperatura */
-    doc.text(198, 50, data.temp);
+    doc.text(198, 45, data.temp);
 
     doc.setFontSize(11);
 
-    var linea = 61;
+    var linea = 56;
 
     for (var i = 0; i < data.medicamento.length; i++) {
 
